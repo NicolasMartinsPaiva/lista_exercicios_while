@@ -6,11 +6,17 @@
     */
 
     //ENTRADA
-
+    let nome = prompt("Insira o seu nome: ");
+    let senha = prompt("Insire a sua senha: ");
 
     //PROCESSAMENTO
+    while (nome == senha) {
+        if (nome === senha) {
+            senha = prompt("Insire a sua senha: ");
+        }
+    }
 
 
     //SAÍDA
-
+    alert(`Sua senha é '${senha}' e seu nome é '${nome}'`);
 </script>

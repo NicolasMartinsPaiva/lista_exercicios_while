@@ -6,11 +6,14 @@
     */
 
     //ENTRADA
-
+    let numero = Number(prompt("Insira um número entre 0 e 10: "));
 
     //PROCESSAMENTO
-
+    while (numero < 0 || numero > 10 || isNaN(numero)) {
+    numero = Number(prompt("Insira um número entre 1 e 10:"));
+    }
 
     //SAÍDA
+        alert(`O número inserido foi ${numero}!`);
 
 </script>
