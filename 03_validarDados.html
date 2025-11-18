@@ -11,11 +11,30 @@
     */
 
     //ENTRADA
-
+    let idade = Number(prompt("Informe a sua idade: "));
+    let nome = prompt("Insira o seu nome: ");
+    let sexo = prompt("Informe seu sexo: F - feminino, M - Masculino.").toLowerCase();
+    let estado = prompt("Informe seu estado civil: s, c, v, d").toLowerCase();
 
     //PROCESSAMENTO
+    while (idade > 150 || idade < 0) {
+        alert("Digite uma idade válida!");
+            idade = Number(prompt("Informe a sua idade: (Informe uma idade entre 1 e 150 anos)"));
+    }
 
-
+    while (nome.length < 3 && nome.length > 30) {
+        alert("Digite um nome válido!");
+            nome = prompt("Insira um nome válido: ");
+    }
+    while (sexo != "f" && sexo != "m") {
+        alert("Digite um sexo que exista!");
+            sexo = prompt("Informe seu sexo: F - feminino, M - Masculino.").toLowerCase();
+    }
+    while (estado != "s" && estado != "c" && estado != "v" && estado != "d") {
+        alert("Digite um estado civil válido!");
+            estado = prompt("Informe seu estado civil: s, c, v, d").toLowerCase();
+    }
     //SAÍDA
+    alert("Válido!");
 
 </script>
